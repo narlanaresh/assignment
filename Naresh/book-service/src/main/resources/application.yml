@@ -1,0 +1,22 @@
+server:
+     port: 9090
+
+     
+management:
+         endpoints:
+               web:
+                  exposure:
+                       include: "*"
+                       
+                       
+                       
+security:
+  oauth2:
+    client:
+      clientId: 0oatwiqmzCbOSVWhw5d6
+      clientSecret: vShyjRqM11GXoj4OZ2ehn1bptp85mXzEazgZ8fwm
+      accessTokenUri: https://dev-83577266.okta.com/oauth2/default/v1/token
+      userAuthorizationUri: https://dev-83577266.okta.com/oauth2/default/v1/authorize
+      scope: openid profile email
+    resource:
+      userInfoUri: https://dev-83577266.okta.com/oauth2/default/v1/userinfo
